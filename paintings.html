@@ -54,23 +54,23 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
                 <li class="dropdown">
-                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="index.html#">
                 Home<span class="caret"></span></a>
                 </li>
                 <li class="page-scroll">
-                    <a href="#aboutme">About Me</a>
+                    <a href="index.html#aboutme">About Me</a>
                 </li>
 		<li class="page-scroll">
-                    <a href="#researchinterests">Research Interests</a>
+                    <a href="index.html#researchinterests">Research Interests</a>
                 </li>
 
 		<li><a href="websitecv.pdf">CV</a></li> 
                 <li class="page-scroll">
-                    <a href="#awards">Awards</a>
+                    <a href="index.html#awards">Awards</a>
                 </li>
 		    
 		<li class="page-scroll">
-                    <a href="#teaching">Teaching</a>
+                    <a href="index.html#teaching">Teaching</a>
                 </li>
 		    
 		<li class="page-scroll">
@@ -78,7 +78,7 @@
                 </li>
 	
                 <li class="page-scroll">
-                    <a onclick="javascript:reset_menus();$('#tab-9-content').show();" href="#contact">Contact</a>
+                    <a onclick="javascript:reset_menus();$('#tab-9-content').show();" href="index.html#contact">Contact</a>
                 </li>
                 <li class="page-scroll">
                     <a onclick="javascript:reset_menus();$('#bs-example-navbar-collapse-2').toggle();">
@@ -98,23 +98,118 @@
 
 
 </body>
-    
-    
-<figure>
-    <img src='dog.jpg' alt='missing' width="20%" height="20%" />
-    <figcaption>Acrylic on canvas</figcaption>
-</figure>
+    <!DOCTYPE html>
+<html>
+<head>
+<style>
+div.gallery {
+  border: 1px solid #ccc;
+}
 
-<figure>
-    <img src='lion.jpg' alt='missing'  width="20%" height="20%"/>
-    <figcaption>Acrylic on canvas</figcaption>
-</figure>
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+</head>
+<body>
+
+<h2>Responsive Image Gallery</h2>
+<h4>Resize the browser window to see the effect.</h4>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="dog.jpg">
+      <img src="dog.jpg" alt="Cinque Terre" width="25%" height="25%">
+    </a>
+    <div class="desc">Acrylic on canvas</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="lion.jpg">
+      <img src="lion.jpg" alt='missing' width="20%" height="20%">
+    </a>
+    <div class="desc">Acrylic on canvas</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="leopard.jpg">
+      <img src="leopard.jpg" alt='missing' width="17%" height="20%">
+    </a>
+    <div class="desc">Ink on board</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="London.jpg">
+      <img src="London.jpg" alt='missing' width="20%" height="20%">
+    </a>
+    <div class="desc">Acrylic on canvas</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="London.jpg">
+      <img src="glasgow.jpg" alt='missing' width="20%" height="20%">
+    </a>
+    <div class="desc">Photograph</div>
+  </div>
+</div>
+
+<div class="clearfix"></div>
+
+
+
+</body>
+</html>
+
+
     
-<figure>
-    <img src='leopard.jpg' alt='missing'  width="20%" height="20%"/>
-    <figcaption>Ink on board</figcaption>
-</figure>
-    
+
 <figure>
     <img src='london.jpg' alt='missing'  width="20%" height="20%"/>
     <figcaption>Acrylic on canvas</figcaption>
