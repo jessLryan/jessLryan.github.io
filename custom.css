@@ -56,7 +56,7 @@ body {
 	display: inline-block;
 	width: 20px;
 	height: 20px;
-	background: url('../images/ppt.gif') no-repeat 0px 3px;
+	background: url('../ppt.gif') no-repeat 0px 3px;
 }
 .isotope-item {
   z-index: 2;
